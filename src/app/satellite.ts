@@ -1,3 +1,5 @@
+import { style } from "@angular/animations";
+
 export class Satellite {
 
 	name: string;
@@ -15,7 +17,14 @@ export class Satellite {
    }
 	
 	isSpaceDebris(): boolean {
-		return true;
+		//let td= document.getElementsByTagName('td')
+		if( this.type ==='Space Debris'){
+			//td.setAttribute(class, warning)
+			return true;
+		} else { 
+			//console.log(this)
+		return false;
+	}
    }
 
 }
